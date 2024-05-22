@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    /* html,
+    body {
+      position: relative;
+      height: 100%;
+    } */
+
+    body {
+      background: #ffffff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 99%;
+      height: 100%;
+      border-radius: 8px;
+      background: #fff;
+
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    } */
+
+
+
+/* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+.card-list {
+    display: grid;
+   /* width: 25%; */
+}
+.card-list h3{
+color: #000000a1;
+font-size:large;
+
+}
+.card-list p{
+color: #00000079;
+
+}
+.card-list img {
+    
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 151px;
+}
+
+.card-list {
+    margin-left: 12px;
+    width: 84%;
+    height: 300px;
+    background: #E8E8E8;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    /* transition: border 0.5s ease; */
+}
+
+@media only screen and (max-width: 600px) {
+
+  .card-list img {
+    margin-left: 38px;
+    width: 100px;
+    border-radius: 50%;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  
+    .card-list {
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    /* max-width: 1250px; */
+    /* margin: 150px auto; */
+    /* padding: 20px; */
+
+    /* gap: 20px; */
+}
+
+.card-list .card-item {
+    margin-left: 20px;
+    width: 75%;
+    height: 150px;
+    background: #fff;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid black;
+    /* transition: border 0.5s ease; */
+}    
+
+
+.swiper {
+      width: 99%;
+      height: 100%;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+}
+
+
+  </style>
+</head>
+
+<body>
+<h1 style="text-align: center;">Student's Reviews</h1>
+<br>
+  <!-- <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Student's Reviews
+
+  </h1> -->
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        
+        
+        <div class="card-list">
+
+   
+          <img src="pic/kar.png" alt="Card Image">
+              <h3>Karnajit Baraik</h3>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium reprehenderit mollitia corrupti maxime ex recusandae provident doloremque magni voluptates? Voluptatem.</p>
+            
+    
+</div>
+
+
+</div>
+      <div class="swiper-slide"><div class="card-list">
+   
+            <img src="pic/sanjib.png" alt="Card Image">
+            <h3>Sanjib Majumder</h3>
+           <p>“I absolutely loved Professor's class! Their engaging teaching
+            style made complex topics easy to understand. The assignments were challenging but rewarding.”</p>
+      
+</div></div>
+      <div class="swiper-slide"><div class="card-list">
+      
+          <img src="pic/hridom.png" alt="Card Image">
+          <h3>Hridam Ghosh</h3>
+          <p>“Professor's course was a game-changer for me. The practical
+            projects helped me apply theory to real-world scenarios. Highly recommended!”</p>
+
+        </div></div>
+     
+      <div class="swiper-slide"><div class="card-list">
+   
+          <img src="pic/kar.png" alt="Card Image">
+          <h3>Karnajit Baraik</h3>
+          <p>“Professor Adams was approachable and always willing to help. The group
+            projects encouraged collaboration, and I learned a lot.”</p>
+
+        </div></div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+
+
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      loop: true,
+      autoplay: {
+      delay: 2400,
+      disableOnInteraction: true,
+    },
+    breakpoints: {
+        300:{
+            slidesPerView: 1,
+
+        },
+        968:{
+            slidesPerView: 3,
+        }
+    },
+      spaceBetween: 10,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+
+
+</body>
+
+</html>

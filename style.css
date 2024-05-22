@@ -44,6 +44,10 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   box-sizing: border-box;
+  /* overflow-y: hidden; */
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .lo {
@@ -112,6 +116,13 @@ iframe {
   margin: 3%;
 }
 
+.teach{
+  width: 100%;
+  height: 100px;
+background: transparent;
+}
+
+
 
 
 
@@ -124,6 +135,10 @@ iframe {
 
 
 @media only screen and (max-width: 600px) {
+
+.csp{
+  display: flex !important;
+}
 
   .rendu {
     background-color: #c2c2d6;
