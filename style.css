@@ -136,6 +136,13 @@ background: transparent;
 
 @media only screen and (max-width: 600px) {
 
+
+.tech{
+  height: 460px;
+  margin: 0 10px 0 0px;
+}
+
+
 .csp{
   display: flex !important;
 }
