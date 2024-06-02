@@ -122,7 +122,9 @@ iframe {
 background: transparent;
 }
 
-
+.tech{
+  cursor: none;
+}
 
 
 
@@ -140,7 +142,9 @@ background: transparent;
 .tech{
   height: 460px;
   margin: 0 10px 0 0px;
+  cursor: none;
 }
+
 
 
 .csp{
