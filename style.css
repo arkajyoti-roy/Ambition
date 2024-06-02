@@ -127,7 +127,9 @@ background: transparent;
 }
 
 
-
+.apn{
+  gap: 0.5rem;
+}
 
 
 
@@ -137,6 +139,12 @@ background: transparent;
 
 
 @media only screen and (max-width: 600px) {
+
+
+  .apn {
+    gap: -0.5rem !important;
+}
+
 
 
 .tech{
