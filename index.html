@@ -26,17 +26,15 @@
   " rel="stylesheet">
 
 
-
-<!-- GSAP -->
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
 </head>
 
 <body>
 
 <div id="main">
 
-  <div class="navio flex gap-2">
+<!-- NAV -->
+
+  <div class="navio flex gap-2" id="nav">
     <img src="pic/df.png" class="lo" alt="">
     <a href="index.html">  <h1 class="text-3xl font-serif font-bold nm">Ambition</h1></a>
 
@@ -47,8 +45,11 @@
     </button>
 
   </div>
+
+
+<!-- TOP SLIDER -->
   <br>
-  <div class="swiper mySwiper">
+  <div class="swiper mySwiper" id="slider">
     <div class="swiper-wrapper">
       <div class="swiper-slide"> <img class="img_slide" src="pic/asd.jpg" alt="" srcset=""> </div>
       <div class="swiper-slide"> <img class="img_slide" src="pic/3.jpg" alt="" srcset=""> </div>
@@ -70,13 +71,14 @@
   </div>
 
 
+<!-- COURSES -->
 
-
-  <section class="text-gray-600 body-font">
+  <section class="text-gray-600 body-font" id="courses">
     <div class="container px-5 py-24 mx-auto">
       <h2 class="text-center text-2xl font-bold cus">Courses We Offer</h2><br>
       <div class="flex flex-wrap -m-4">
-        <div class="p-4 lg:w-1/3">
+
+        <div class="p-4 lg:w-1/3" id="c1">
           <div
             class="h-full bg-gray-200 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
             <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Civil Engineering</h1>
@@ -94,7 +96,7 @@
             </div>
           </div>
         </div>
-        <div class="p-4 lg:w-1/3">
+        <div class="p-4 lg:w-1/3" id="c2">
           <div
             class="h-full bg-gray-200 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
             <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Computer Science & Technology</h1>
@@ -115,7 +117,7 @@
             </div>
           </div>
         </div>
-        <div class="p-4 lg:w-1/3">
+        <div class="p-4 lg:w-1/3" id="c3">
           <div
             class="h-full bg-gray-200 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
             <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Electrical Engineering</h1>
@@ -142,93 +144,25 @@
 <br>
 
 
+<!-- FACULTIES -->
 
-
-  <div class="tech">
+  <div class="tech" id="faculty">
     <iframe src="tech.html" frameborder="0"></iframe>
   </div>
   
   
 <br>
 
-  <div class="tech">
+<!-- STUDENT REVIEWS -->
+  <div class="tech" id="reviews">
     <iframe src="reviews.html" frameborder="0"></iframe>
   </div>
   
-<!-- 
-
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Student's Reviews
-
-      </h1>
-      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-        <div class="p-4 md:w-1/3 flex">
-          <div
-            class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              class="w-6 h-6" viewBox="0 0 24 24">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-          <div class="flex-grow pl-6">
-            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Sanjib Majumder</h2>
-            <p class="leading-relaxed text-base">“I absolutely loved Professor Smith’s class! Their engaging teaching
-              style made complex topics easy to understand. The assignments were challenging but rewarding.”</p>
-        
-          </div>
-        </div>
-        <div class="p-4 md:w-1/3 flex">
-          <div
-            class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              class="w-6 h-6" viewBox="0 0 24 24">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-          <div class="flex-grow pl-6">
-            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Karnajit Baraik</h2>
-            <p class="leading-relaxed text-base">“Professor Garcia’s course was a game-changer for me. The practical
-              projects helped me apply theory to real-world scenarios. Highly recommended!”</p>
-
-          </div>
-        </div>
-        <div class="p-4 md:w-1/3 flex">
-          <div
-            class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4 flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              class="w-6 h-6" viewBox="0 0 24 24">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-          <div class="flex-grow pl-6">
-            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Hridam Ghosh</h2>
-            <p class="leading-relaxed text-base">“Professor Adams was approachable and always willing to help. The group
-              projects encouraged collaboration, and I learned a lot.”</p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
 
 
-
-
-
-
-
-
-
-
-
-
-  
-
+<!-- MAP -->
+ 
   <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Reach Us </h1>
   <div class="flex gap-2 rendu">
     <div class="iframeee">
@@ -241,7 +175,14 @@
       <h3>Rajarbag, Near Arunachal Club, 799120</h3>
     </div>
   </div>
-  <footer class="text-gray-600 body-font">
+
+
+
+
+
+<!-- FOOTER -->
+
+  <footer class="text-gray-600 body-font" id="footer">
 
     <div class="bg-gray-100">
       <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
@@ -251,16 +192,7 @@
         </p>
 
 
-
-
-
-
-
-
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start apn">
-
-
-
 
           <p class="text-gray-500 text-sm text-center sm:text-left">
             Developed by Arkajyoti Roy,
@@ -308,6 +240,8 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="main.js"></script>
 
